@@ -5,27 +5,102 @@ date: "17 août 2015"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+My Tidy Data Set - Code Book
+============================
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+subject (integer)
+-----------------
+
+| subject | Volunteer's ID                                                  |
+|---------|-----------------------------------------------------------------|
+| 1..30   | Unique identifier assigned to each volunteer for the experiment |
+
+activity (character)
+--------------------
+
+| activity | Activity           |
+|----------|--------------------|
+|          | WALKING            |
+|          | WALKING_UPSTAIRS   |
+|          | WALKING_DOWNSTAIRS |
+|          | SITTING            |
+|          | STANDING           |
+|          | LAYING             |	
+
+Other variables (double)
+------------------------
+
+| Other variables             | Average of each variable from the data set in step 4 |
+|-----------------------------|------------------------------------------------------|
+| tBodyAcc-mean()-X           |                                                      |
+| tBodyAcc-mean()-Y           |                                                      |
+| tBodyAcc-mean()-Z           |                                                      |
+| tBodyAcc-std()-X            |                                                      |
+| tBodyAcc-std()-Y            |                                                      |
+| tBodyAcc-std()-Z            |                                                      |
+| tGravityAcc-mean()-X        |                                                      |
+| tGravityAcc-mean()-Y        |                                                      |
+| tGravityAcc-mean()-Z        |                                                      |
+| tGravityAcc-std()-X         |                                                      |
+| tGravityAcc-std()-Y         |                                                      |
+| tGravityAcc-std()-Z         |                                                      |
+| tBodyAccJerk-mean()-X       |                                                      |
+| tBodyAccJerk-mean()-Y       |                                                      |
+| tBodyAccJerk-mean()-Z       |                                                      |
+| tBodyAccJerk-std()-X        |                                                      |
+| tBodyAccJerk-std()-Y        |                                                      |
+| tBodyAccJerk-std()-Z        |                                                      |
+| tBodyGyro-mean()-X          |                                                      |
+| tBodyGyro-mean()-Y          |                                                      |
+| tBodyGyro-mean()-Z          |                                                      |
+| tBodyGyro-std()-X           |                                                      |
+| tBodyGyro-std()-Y           |                                                      |
+| tBodyGyro-std()-Z           |                                                      |
+| tBodyGyroJerk-mean()-X      |                                                      |
+| tBodyGyroJerk-mean()-Y      |                                                      |
+| tBodyGyroJerk-mean()-Z      |                                                      |
+| tBodyGyroJerk-std()-X       |                                                      |
+| tBodyGyroJerk-std()-Y       |                                                      |
+| tBodyGyroJerk-std()-Z       |                                                      |
+| tBodyAccMag-mean()          |                                                      |
+| tBodyAccMag-std()           |                                                      |
+| tGravityAccMag-mean()       |                                                      |
+| tGravityAccMag-std()        |                                                      |
+| tBodyAccJerkMag-mean()      |                                                      |
+| tBodyAccJerkMag-std()       |                                                      |
+| tBodyGyroMag-mean()         |                                                      |
+| tBodyGyroMag-std()          |                                                      |
+| tBodyGyroJerkMag-mean()     |                                                      |
+| tBodyGyroJerkMag-std()      |                                                      |
+| fBodyAcc-mean()-X           |                                                      |
+| fBodyAcc-mean()-Y           |                                                      |
+| fBodyAcc-mean()-Z           |                                                      |
+| fBodyAcc-std()-X            |                                                      |
+| fBodyAcc-std()-Y            |                                                      |
+| fBodyAcc-std()-Z            |                                                      |
+| fBodyAccJerk-mean()-X       |                                                      |
+| fBodyAccJerk-mean()-Y       |                                                      |
+| fBodyAccJerk-mean()-Z       |                                                      |
+| fBodyAccJerk-std()-X        |                                                      |
+| fBodyAccJerk-std()-Y        |                                                      |
+| fBodyAccJerk-std()-Z        |                                                      |
+| fBodyGyro-mean()-X          |                                                      |
+| fBodyGyro-mean()-Y          |                                                      |
+| fBodyGyro-mean()-Z          |                                                      |
+| fBodyGyro-std()-X           |                                                      |
+| fBodyGyro-std()-Y           |                                                      |
+| fBodyGyro-std()-Z           |                                                      |
+| fBodyAccMag-mean()          |                                                      |
+| fBodyAccMag-std()           |                                                      |
+| fBodyBodyAccJerkMag-mean()  |                                                      |
+| fBodyBodyAccJerkMag-std()   |                                                      |
+| fBodyBodyGyroMag-mean()     |                                                      |
+| fBodyBodyGyroMag-std()      |                                                      |
+| fBodyBodyGyroJerkMag-mean() |                                                      |
+| fBodyBodyGyroJerkMag-std()  |                                                      |
 
 
-```r
-summary(cars)
-```
 
-```
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-```
 
-You can also embed plots, for example:
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

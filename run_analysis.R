@@ -80,6 +80,8 @@ myDescribedSet <- myExtractedSet %>%
   select(-V2) %>%
   group_by(subject, activity)
 
+write.table(myDescribedSet, "myDescribedSet.txt", row.name=FALSE)
+
 ## 5. From the data set in step 4, creates a second, independent tidy data set
 #    with the average of each variable for each activity and each subject.
 
